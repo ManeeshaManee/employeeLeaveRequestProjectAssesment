@@ -10,5 +10,5 @@ Base = declarative_base()
 
 # Initialize database and create tables
 def init_db():
-    from app.models import LeaveRequest  # Import your models to ensure they are created
+    from app.models import LeaveRequest 
     Base.metadata.create_all(bind=engine)
